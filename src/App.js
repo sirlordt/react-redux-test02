@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/no-named-as-default */
+import React from "react";
 
-function App() {
+import "./App.css";
+
+import Post from "./components/Posts";
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="app">
+      <div>
+        <h2>Articles</h2>
+        {/*<List />*/}
+      </div>
+      <div>
+        <h2>Add a new article</h2>
+        {/*<Form />*/}
+      </div>
+      <div>
+        <h2>API posts</h2>
+        <Post />
+      </div>
     </div>
+
   );
-}
+
+};
 
 export default App;
