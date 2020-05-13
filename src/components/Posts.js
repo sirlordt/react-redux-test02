@@ -56,7 +56,8 @@ export class Post extends Component {
 
 }
 const mapDispatchToProps = {
- articlesFetch, articlesAdd
+  articlesFetch,
+  articlesAdd
 };
 
 const mapStateToProps = ( state ) => {
